@@ -56,3 +56,9 @@ Route::get('articulos/{id}','articuloController@getArticulosed');
 Route::post('articulos/create','articuloController@create');
 Route::delete('articulos/{id}','articuloController@destroy');
 Route::put('articulos/{id}','articuloController@edit');
+
+
+
+Route::resource('factura', 'FacturaMController');
+Route::get("facturadetalle/{folio}", "FacturaMController@facturadetalle");
+Route::post("facturadetallestore/{folio}", "FacturaMController@facturadetallestore");

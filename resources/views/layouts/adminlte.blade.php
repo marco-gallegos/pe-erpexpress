@@ -33,6 +33,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Google Font -->
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link rel="stylesheet" href="http://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -270,18 +271,18 @@ desired effect
         @can('admin user')
             <li class=""><a href="{{ url('user') }}"><i class="fa fa-users"></i> <span>Administrar Usuarios</span></a></li>
         @endcan
-        <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
         <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
+          <a href=""><i class="fa fa-link"></i> <span>Facturas</span>
             <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#">Link in level 2</a></li>
-            <li><a href="#">Link in level 2</a></li>
+            <li><a href="{{ url('factura/create') }}">Crear</a></li>
+            <li><a href="#"></a></li>
           </ul>
         </li>
+        <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
       </ul>
       <!-- /.sidebar-menu -->
     </section>
@@ -412,6 +413,14 @@ desired effect
 <script src="{{ asset('adminlte/js/bootstrap.min.js') }}"></script>
 <!-- AdminLTE App -->
 <script src="{{ asset('adminlte/js/adminlte.min.js') }}"></script>
+
+<script src="http://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+  $(document).ready( function () {
+    $('#dataTable').DataTable();
+  } );
+</script>
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
