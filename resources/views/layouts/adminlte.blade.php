@@ -282,6 +282,68 @@ desired effect
             <li><a href="#"></a></li>
           </ul>
         </li>
+
+        <li class="treeview">
+          <a href=""><i class="fa fa-link"></i><span>Facturas Compra</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{ url('facturaCompra/create') }}">Crear</a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+
+
+        <li class="treeview">
+          <a href=""><i class="fa fa-link"></i> <span>Articulos</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{ url('articulos') }}">Crear</a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href=""><i class="fa fa-link"></i> <span>Empleados</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{ url('empleados') }}">Crear</a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href=""><i class="fa fa-link"></i> <span>Clientes</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{ url('clientes') }}">Crear</a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+
+        <li class="treeview">
+          <a href=""><i class="fa fa-link"></i> <span>Proveedores</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{ url('proveedores') }}">Crear</a></li>
+            <li><a href="#"></a></li>
+          </ul>
+        </li>
+
         <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
       </ul>
       <!-- /.sidebar-menu -->

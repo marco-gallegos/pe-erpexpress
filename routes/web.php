@@ -44,18 +44,25 @@ Route::get('empleados/{id}','empleadoController@getEmpleadosed');
 Route::post('empleados/create','empleadoController@create');
 Route::delete('empleados/{id}','empleadoController@destroy');
 Route::put('empleados/{id}','empleadoController@edit');
+
 //----------------------------------------------------PROVEEDORES
 Route::get('proveedores','proveedorController@getProveedores');
 Route::get('proveedores/{id}','proveedorController@getProveedoresed');
 Route::post('proveedores/create','proveedorController@create');
 Route::delete('proveedores/{id}','proveedorController@destroy');
 Route::put('proveedores/{id}','proveedorController@edit');
+
 //----------------------------------------------------ARTICULO
 Route::get('articulos','articuloController@getArticulos');
 Route::get('articulos/{id}','articuloController@getArticulosed');
 Route::post('articulos/create','articuloController@create');
 Route::delete('articulos/{id}','articuloController@destroy');
 Route::put('articulos/{id}','articuloController@edit');
+
+//----------------------------------------------FACTURA COMPRA
+Route::resource('facturaCompra', 'FacturaCompraController');
+Route::get("facturaCompraDetalle/{folio}", "FacturaCompraController@facturadetalle");
+Route::post("facturaCompraDetallestore/{folio}", "FacturaCompraController@facturadetallestore");
 
 
 
