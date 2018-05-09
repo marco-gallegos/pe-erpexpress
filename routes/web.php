@@ -69,3 +69,34 @@ Route::post("facturaCompraDetallestore/{folio}", "FacturaCompraController@factur
 Route::resource('factura', 'FacturaMController');
 Route::get("facturadetalle/{folio}", "FacturaMController@facturadetalle");
 Route::post("facturadetallestore/{folio}", "FacturaMController@facturadetallestore");
+
+
+Route::get("reportes/facturascliente",function(){
+	$clientes = App\Cliente::all();
+	return view("reportes.facturascliente",compact("clientes"));
+});
+Route::post("reportes/facturascliente","ReportesController@facturascliente");
+
+
+Route::get("reportes/facturasproveedor",function(){
+	$proveedores = App\Proveedor::all();
+	return view("reportes.facturasproveedor",compact("proveedores"));
+});
+Route::post("reportes/facturasproveedor","ReportesController@facturasproveedor");
+
+
+
+Route::get("reportes/facturasfechacliente",function(){
+	$clientes = App\Cliente::all();
+	return view("reportes.facturasfechacliente",compact("clientes"));
+});
+Route::post("reportes/facturasfechacliente","ReportesController@facturasfechacliente");
+
+Route::get("reportes/facturasfechaproveedor",function(){
+	$proveedores = App\Proveedor::all();
+	return view("reportes.facturasfechaproveedor",compact("proveedores"));
+});
+Route::post("reportes/facturasfechaproveedor","ReportesController@facturasfechaproveedor");
+
+
+Route::get("reportes/kardexarticulos","ReportesController@kardexarticulos");

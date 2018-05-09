@@ -40,6 +40,8 @@
 					<a href="{{ url('register') }}" class="btn btn-sm btn-primary">Crear un nuevo Usuario</a><br>
 					<a href="{{ url('role/create') }}" class="btn btn-sm btn-primary">Crear un nuevo Rol</a><br>			
 					<a href="{{ url('permission/create') }}" class="btn btn-sm btn-primary">Crear un nuevo Permiso</a>
+					<a href="{{ url('role') }}" class="btn btn-sm btn-primary">Roles</a>
+					<a href="{{ url('permission') }}" class="btn btn-sm btn-primary">Permisos</a>
 				</div>
 			</div>
 		</div>	

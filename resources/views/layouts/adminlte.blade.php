@@ -271,6 +271,23 @@ desired effect
         @can('admin user')
             <li class=""><a href="{{ url('user') }}"><i class="fa fa-users"></i> <span>Administrar Usuarios</span></a></li>
         @endcan
+
+        <li class="treeview">
+          <a href=""><i class="fa fa-link"></i> <span>Reportes</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="{{ url('reportes/facturascliente') }}">factura venta cliente</a></li>
+            <li><a href="{{ url('reportes/facturasproveedor') }}">factura compra proveedor</a></li>
+            <li><a href="{{ url('reportes/facturasfechacliente') }}">factura venta fecha</a></li>
+            <li><a href="{{ url('reportes/facturasfechaproveedor') }}">factura compra fecha</a></li>
+            <li><a href="{{ url('reportes/kardexarticulos') }}">kardex articulos</a></li>
+            <li><a href="{{ url('reportes') }}">Articulos baja existencia</a></li>
+          </ul>
+        </li>
+
         <li class="treeview">
           <a href=""><i class="fa fa-link"></i> <span>Facturas</span>
             <span class="pull-right-container">
