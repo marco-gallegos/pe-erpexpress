@@ -101,9 +101,9 @@ DELIMITER ;
 #articulos menores a
 DELIMITER //
 
-CREATE PROCEDURE kardexarticulos() 
+CREATE PROCEDURE articulosexistencia(_existencia INT) 
 BEGIN
-	select * from articulo;
+	SELECT * FROM articulo WHERE existencia < _existencia;
 END//
 
 DELIMITER ;

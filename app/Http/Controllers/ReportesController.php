@@ -58,8 +58,8 @@ class ReportesController extends Controller
     	return view("reportes.kardexarticulos",compact("articulos"));
     }
 
-    public function articulospocos(Request $request){
-    	$articulos = DB::select("call kardexarticulos");
+    public function articulosexistencia(Request $request){
+    	$articulos = DB::select("call articulosexistencia(?)",[$request->cantidad]);
     	//dump($articulos);
     	return view("reportes.kardexarticulos",compact("articulos"));
     }

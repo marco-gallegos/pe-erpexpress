@@ -284,7 +284,7 @@ desired effect
             <li><a href="{{ url('reportes/facturasfechacliente') }}">factura venta fecha</a></li>
             <li><a href="{{ url('reportes/facturasfechaproveedor') }}">factura compra fecha</a></li>
             <li><a href="{{ url('reportes/kardexarticulos') }}">kardex articulos</a></li>
-            <li><a href="{{ url('reportes') }}">Articulos baja existencia</a></li>
+            <li><a href="{{ url('reportes/articulosexistencia') }}">Articulos por existencia</a></li>
           </ul>
         </li>
 

@@ -100,3 +100,8 @@ Route::post("reportes/facturasfechaproveedor","ReportesController@facturasfechap
 
 
 Route::get("reportes/kardexarticulos","ReportesController@kardexarticulos");
+
+Route::get("reportes/articulosexistencia",function(){
+	return view("reportes.articulosexistencia");
+});
+Route::post("reportes/articulosexistencia","ReportesController@articulosexistencia");
