@@ -105,3 +105,9 @@ Route::get("reportes/articulosexistencia",function(){
 	return view("reportes.articulosexistencia");
 });
 Route::post("reportes/articulosexistencia","ReportesController@articulosexistencia");
+
+Route::get('api/facturascliente/{id}', "ApiController@facturascliente");
+
+Route::get('api/articulos', "ApiController@articulos");
+
+Route::get('api/clientes', "ApiController@clientes");
